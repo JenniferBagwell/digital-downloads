@@ -1,0 +1,39 @@
+<style>
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #19478D;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+</style>
+<script>
+function openPdf()
+{
+var omyFrame = document.getElementById("myFrame");
+omyFrame.style.display="block";
+omyFrame.src = "https://www.optimist.org/documents/Summary%20of%20Board%20Actions%20(sep-13).pdf";
+}
+
+function openPdf1()
+{
+var omyFrame = document.getElementById("myFrame");
+omyFrame.style.display="block";
+omyFrame.src = "https://www.optimist.org/documents/Summary%20of%20Board%20Action%20(December%203-4,%202021).pdf";
+}
+
+</script>
+
+<html>
+<head>
+</head>
+<body>
+
+<ul><input type="button" value="Cross Word Puzzle" onclick = "openPdf()"/></ul>
+<ul><input type="button" value="Kids Bookmark" onclick = "openPdf1()"/></ul>
+</body>
+
+<iframe id="myFrame" style="display:none" width="500" height="300"></iframe>
